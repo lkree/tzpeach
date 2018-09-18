@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="unineuelight.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+
+    <title>Registration</title>
+</head>
+<body>
+    <div class="go-to-right-button"><a href="#">&lt;</a></div>
+    <main>
+        <header class="registration-head">
+    <h1 class="registration-head__header">Регистрация</h1>
+</header>
+<section class="registration">
+    <form action="#" class="registration__form">
+        <label for="#" class="large-label">
+            <input type="email" class="registration__email large-form" required placeholder="info@mail.ru">
+            <p class="registration__note">Ваш e-mail</p>
+        </label>
+        <label for=""><input type="password" class="registration__users-password short-form" required placeholder="Например: nmASDH32#4"><p class="registration__note inline-block" id="password">Придумайте пароль</p></label>
+        <label for=""><input type="password" class="registration__users-password short-form" required><p class="registration__note inline-block" id="password_secure">Повторите пароль</p></label>
+        <label for=""><input type="text" class="registration__name short-form" required placeholder="Иван"><p class="registration__note inline-block" id="name">Имя представителя</p></label>
+        <label for=""><input type="text" class="registration__surname short-form" required placeholder="Иванов"><p class="registration__note inline-block" id="surname">Фамилия</p></label>
+        <label for="" class="large-label"><input type="text" class="registration__organization large-form" required placeholder="Шальная императрица"><p class="registration__note" id="salon">Наименование салона</p></label>
+        <label for=""><input type="tel" class="registration__phone short-form" required placeholder="+7-(123)-456-78-90"><p class="registration__note inline-block" id="phone">+7</p></label>
+        <label for=""><input type="number" class="registration__sms short-form" required placeholder="ХХ-ХХ-Х"><p class="registration__note inline-block" id="sms">Код из смс</p></label>
+        <input type="submit" class="registration__submit inline-block" value="Зарегистрироваться">
+        <div class="registration__submit-info">Нажимая на кнопку &laquo;Зарегистрироваться&raquo;
+                я даю согласие на обработку личной информации 
+                и соглашаюсь с <a href="#" target="_blank">политикой</a> сервиса</div>
+    </form>
+        </section>
+    </main>
+</body>
+</html>

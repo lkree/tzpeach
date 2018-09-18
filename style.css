@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    vertical-align: top;
+}
+body {
+    width: 1600px;
+    background-color: #f7f7f7;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.go-to-right-button {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    width: 40px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 300;
+    z-index: 1;
+}
+.go-to-right-button:hover {
+    border: 1px solid blue;
+}
+.go-to-right-button a {
+    text-decoration: none;
+    color: white;
+}
+.go-to-right-button a:visited {
+    color: white;
+}
+.go-to-right-button a:hover {
+    color: lightcoral;
+}
+label {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+}
+main {
+    padding: 57px 470px 0 470px;
+    position: relative;
+}
+.registration-head__header {
+    font-family: "Uni Neue Light", serif;
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 1.24px;
+    padding-bottom: 29px;
+    margin: 0;
+}
+.registration__note {
+    font-size: 13px;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    opacity: 0.3;
+}
+.large-form {
+    margin: 0 0 33px;
+    height: 35px;
+    font-size: 25px;
+    padding-top: 10px;
+    background: none;
+    width: 640px;
+    display: block;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.large-form:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+.large-form:focus + .registration__note {
+    font-size: 11px;
+    position: absolute;
+    top: -1px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+.short-form:focus + .registration__note {
+    font-size: 11px;
+    position: absolute;
+    top: -1px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+.short-form {
+    font-size: 25px;
+    padding-top: 10px;
+    margin: 0 0 33px;
+    height: 40px;
+    position: relative;
+    background: none;
+    width: 300px;
+    margin-right: 25px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.short-form:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+.inline-block {
+    display: inline-block;
+}
+.large-label {
+    display: block;
+    width: auto;
+}
+.registration__submit {
+    width: 300px;
+    height: 50px;
+    background-color: #000000;
+    width: 300px;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 84px 40px 0 0;
+}
+.registration__submit:hover {
+    color: lightcoral;
+    border: 1px solid blue;
+}
+.registration__submit-info {
+    width: 283px;
+    font-size: 12px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 90px 0 220px;
+}
+.registration__submit-info a {
+    color: #fd8a78;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+input::-moz-placeholder {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+input:-moz-placeholder {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+input:-ms-input-placeholder {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+}
+input:focus::-moz-placeholder {
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+}
+input:focus:-moz-placeholder {
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+}
+input:focus:-ms-input-placeholder {
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+}

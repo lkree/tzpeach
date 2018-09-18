@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'UniNeueLight';
+	src: url('../fonts/unineuelight.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/unineuelight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/unineuelight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/unineuelight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/unineuelight.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/unineuelight.svg#unineuelight') format('svg'); /* Chrome < 4, Legacy iOS */
+}

@@ -1,0 +1,203 @@
+$white: #fff;
+$light-coral: lightcoral;
+$black: #000;
+@mixin visited-link() {
+	text-decoration: none;
+	color: $white;
+}
+@mixin relative {
+	position: relative;
+}
+@mixin inline-block {
+	display: inline-block;
+}
+@mixin none-margin {
+	margin: 0;
+}
+@mixin uni-light {
+	font-family: "Uni Neue Light", serif;
+}
+@mixin light-font {
+	font-weight: 300;
+}
+@mixin absolute($top: 0, $left: 0) {
+	position: absolute;
+	top: $top;
+	left: $left;
+}
+@mixin input($opacity: 0) {
+	opacity: $opacity;
+	transition: opacity 0.5s ease;
+}
+
+* {
+	box-sizing: border-box;
+	overflow-x: hidden;
+	vertical-align: top;
+}
+@mixin solid-border-background {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #000;
+	outline: none;
+}
+@mixin transition {
+	transition: all 0.2s ease;
+}
+body {
+	width: 1600px;
+	background-color: #f7f7f7;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+.go-to-right-button {
+	position: fixed;
+    top: 50px;
+    right: 0px;
+    width: 40px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 300;
+    z-index: 1;
+    &:hover {
+		border: 1px solid blue;
+	}
+	a {
+		@inlcude visited-link;
+	}
+	a:visited {
+		@inlcude visited-link;
+	}
+	a:hover {
+		color: $light-coral;
+	}
+}
+label {
+	@include inline-block;
+	width: 49%;
+	@include relative;
+}
+main {
+	padding: 57px 470px 0;
+	@include relative;
+}
+.registration-head__header {
+	@include uni-light;
+	font-size: 52px;
+	font-weight: 300;
+	letter-spacing: 1.24px;
+	padding-bottom: 29px;
+	@include none-margin;
+}
+.registration__note {
+	font-size: 13px;
+	@include light-font;
+	@include absolute(20px);
+	opacity: 0.3;
+}
+.large-form {
+	margin: 0 0 33px;
+	height: 35px;
+	font-size: 25px;
+	padding-top: 10px;
+	background: none;
+    width: 640px;
+    display: block;
+    @include relative;
+	@include solid-border-background;
+
+	&:focus {
+		@include solid-border-background;
+	}
+	&:focus + .registration__note {
+		font-size: 11px;
+		@include absolute(-1px);
+		opacity: 1;
+		@include transition;
+	}
+}
+.short-form {
+	font-size: 25px;
+	padding-top: 10px;
+	margin: 0 0 33px 25px;
+	height: 40px;
+	@include relative;
+	@include solid-border-background;
+	width: 300px;
+	
+	&:focus + .registration__note {
+		font-size: 11px;
+		@include absolute(-1px);
+		opacity: 1;
+		@include transition;
+	}
+	&:focus {
+		@include solid-border-background;
+	}
+}
+.inline-block {
+	@include inline-block;
+}
+.large-label {
+    display: block;
+    width: auto;
+}
+.registration__submit {
+    width: 300px;
+    height: 50px;
+    background-color: $black;
+    width: 300px;
+    color: $white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 84px 40px 0 0;
+
+    &-hover {
+    	color: $light-coral;
+    	border: 1px solid blue;
+    }
+    &-info {
+    	width: 283px;
+    	font-size: 12px;
+    	@include light-font;
+    	@include inline-block;
+    	margin: 90px 0 220px;
+    }
+    &-info a {
+    	color: $light-coral;
+    }
+}
+input {
+	&::-webkit-input-placeholder {
+    @include input;
+	}
+	&::-moz-placeholder {
+    @include input;
+	}
+	&:-moz-placeholder {
+    @include input;
+	}
+	&:-ms-input-placeholder {
+    @include input;
+	}
+	&:focus::-webkit-input-placeholder {
+    @include input(1);
+	}
+	&:focus::-moz-placeholder {
+    @include input(1);
+	}
+	&:focus:-moz-placeholder {
+    @include input(1);
+	}
+	&:focus:-ms-input-placeholder {
+    @include input(1);
+	}
+}

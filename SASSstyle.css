@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  vertical-align: top;
+}
+
+body {
+  width: 1600px;
+  background-color: #f7f7f7;
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.go-to-right-button {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  width: 40px;
+  height: 80px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: 300;
+  z-index: 1;
+}
+.go-to-right-button:hover {
+  border: 1px solid blue;
+}
+.go-to-right-button a {
+  @inlcude visited-link;
+}
+.go-to-right-button a:visited {
+  @inlcude visited-link;
+}
+.go-to-right-button a:hover {
+  color: lightcoral;
+}
+
+label {
+  display: inline-block;
+  width: 49%;
+  position: relative;
+}
+
+main {
+  padding: 57px 470px 0;
+  position: relative;
+}
+
+.registration-head__header {
+  font-family: "Uni Neue Light", serif;
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 1.24px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.registration__note {
+  font-size: 13px;
+  font-weight: 300;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  opacity: 0.3;
+}
+
+.large-form {
+  margin: 0 0 33px;
+  height: 35px;
+  font-size: 25px;
+  padding-top: 10px;
+  background: none;
+  width: 640px;
+  display: block;
+  position: relative;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+.large-form:focus {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+.large-form:focus + .registration__note {
+  font-size: 11px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.short-form {
+  font-size: 25px;
+  padding-top: 10px;
+  margin: 0 0 33px 25px;
+  height: 40px;
+  position: relative;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 300px;
+}
+.short-form:focus + .registration__note {
+  font-size: 11px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.short-form:focus {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.large-label {
+  display: block;
+  width: auto;
+}
+
+.registration__submit {
+  width: 300px;
+  height: 50px;
+  background-color: #000;
+  width: 300px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 84px 40px 0 0;
+}
+.registration__submit-hover {
+  color: lightcoral;
+  border: 1px solid blue;
+}
+.registration__submit-info {
+  width: 283px;
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 90px 0 220px;
+}
+.registration__submit-info a {
+  color: lightcoral;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+input::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+input:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
